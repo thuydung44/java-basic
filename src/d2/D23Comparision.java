@@ -36,6 +36,53 @@ public class D23Comparision  {
         // 채온이 36도 38도  사이에 있는지
         // 그리고
 
+        int base = 12;
+        int num = 3;
+
+        // base가 num의 배수인지?
+        System.out.println(base % num == 0);
+
+        int[] scores = {10, 9, 8};
+        // 점수의 평균이 8.5 보다 큰가?
+        int sum = scores[0] + scores[1] + scores[2];
+        double avg = (double) sum / 3;
+        System.out.println(avg > 8.5);
+
+        // 논리 연산자
+        // 여러조건들을 비교할때 사용하는 연산자
+        int temperature1 = 36;
+        int age = 25;
+
+        // 체온은 37도 이하면서 나이는 20살 이상인가?
+        System.out.println(temperature1 <= 37);
+        System.out.println(age >= 20);
+        // AND 연산 (&&)
+        System.out.println(temperature1 <= 37 && age >= 20);
+
+        boolean notSick = temperature1 <= 37;
+        boolean isOfAge = age >= 20;
+        // 둘다 true 이면 true
+        // 하나라도 false 이면 false
+        System.out.println(notSick && isOfAge);
+
+        // OR 연산 (||)
+        boolean isSunday = true;
+        boolean isHoliday = true;
+        boolean canRest = isSunday || isHoliday;
+        System.out.println(canRest);
+
+        // NOT 연산 (!)
+        System.out.println(!canRest);
+
+        // ! -> && -> ||
+        boolean a = true;
+        boolean b = false;
+        boolean c = false;
+        System.out.println(a && !b);
+        System.out.println(!(b || c));
+        System.out.println(c || b && a || c);
+        System.out.println(a && b || a && c);
+
 
 
     }
