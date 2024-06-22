@@ -14,6 +14,7 @@ public class HelloJava {
         scanner.nextLine();
 
         // 해당 내용 각 주석으로 정리하기
+        // 살아질 까?
 
 
 
